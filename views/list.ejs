@@ -9,11 +9,18 @@
 </head>
 <body>
 
-    <% if(kindOfDay ==="Thursday" || kindOfDay ==="Sunday"){%>
-        <h1 style="color: purple">The Day Is <%=kindOfDay%></h1>
-    <%}else{%>
-        <h1 style="color: red">The Day is <%=kindOfDay%></h1>
+<h1><%=kindOfDay%></h1>
+
+<ul>
+    <%for(let i = 0 ; i < newListItems.length ;i++){%>
+        <li><%=newListItems[i]%></li>
     <%}%>
-    <p>Welcome <%=yourName%></p>
+</ul>
+
+<form action="/" method="post">
+    <input type="text" name="toDoInput">
+    <button type="submit">Submit</button>
+</form>
+
 </body>
 </html>
