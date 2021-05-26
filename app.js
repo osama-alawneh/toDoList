@@ -7,7 +7,7 @@ const date = require(__dirname + "/Date.js");
 
 
 const app = express();
-mongoose.connect("mongodb://localhost:27017/todolistDB" , {useUnifiedTopology: true,useNewUrlParser:true ,useFindAndModify: false, });
+mongoose.connect("mongodb+srv://faceless:123_Killkill@cluster0.yeicq.mongodb.net/todolistDB" , {useUnifiedTopology: true,useNewUrlParser:true ,useFindAndModify: false, });
 
 const itemsSchema = new mongoose.Schema({
     name:{
